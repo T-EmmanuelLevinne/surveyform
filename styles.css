@@ -1,0 +1,239 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: Courier New;
+  background-color: black;
+}
+img {
+  display: block;
+  width: 20.3%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 1p 1p 1px 1px;
+  border: solid;
+  border-color: pink;
+  box-shadow: 0px -4px 15px rgba(255, 20, 147, 0.9), 
+              5px 5px 20px rgba(255, 20, 147, 0.7); 
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  animation: neon-glow 3s infinite linear;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+h1 {
+  font-size: 30px;
+}
+.desc {
+  text-align: center;
+  width: 60vw;
+  max-width: 450px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+hr {
+  height: 3px; 
+  border: none;
+  background: linear-gradient(90deg, pink, rgb(233, 142, 233), hotpink);
+  animation: neon-glow 3s infinite linear;
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0px 0px 10px pink, 0px 0px 20px pink, 0px 0px 30px pink;
+  }
+  50% {
+    box-shadow: 0px 0px 10px purple, 0px 0px 20px purple, 0px 0px 30px purple;
+  }
+  100% {
+    box-shadow: 0px 0px 10px hotpink, 0px 0px 20px hotpink, 0px 0px 30px hotpink;
+  }
+}
+textarea, input, select {
+  font-family: Courier New;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 2em;
+  background-color: white;
+  outline: none;
+  box-shadow: 0 0 15px rgba(255, 20, 147, 1);
+  border-color: hotpink;
+  border-radius: 10px;
+}
+input[type="text"] {
+  transition: box-shadow 0.8s ease-in-out;
+}
+input[type="text"]:focus {
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.8), 0 0 40px rgba(255, 20, 147, 0.5);
+    border-color: pink;
+}
+input[type="email"] {
+  transition: box-shadow 0.8s ease-in-out;
+}
+input[type="email"]:focus {
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.8), 0 0 40px rgba(255, 20, 147, 0.5);
+    border-color: pink;
+}
+textarea {
+  box-shadow: 5px 5px 20px rgba(255, 20, 147, 0.7);
+  border-radius: 10px;
+}
+fieldset {
+   border-width: 5px;
+   border-radius: 10px;
+   border-color: pink;
+   box-shadow: -5px 5px 10px rgba(255, 20, 147, 0.7), 
+ 5px 5px 20px rgba(255, 20, 147, 0.7); 
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+textarea {
+  display: block;
+  resize: none;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid pink;
+    border-radius: 50%;
+    outline: none;
+    background: black;
+    box-shadow: 0 0 5px pink;
+    transition: 0.3s ease-in-out;
+    margin: 0 auto;
+    cursor: pointer;
+    animation: neon-glow 5s infinite linear;
+}
+
+input[type="radio"]:checked {
+    background-color: pink;
+    box-shadow: 0 0 10px pink, 0 0 40px pink;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid pink;
+    border-radius: 50%;
+    outline: none;
+    background: black;
+    box-shadow: 0 0 5px pink;
+    transition: 0.3s ease-in-out;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    animation: neon-glow 6s infinite linear;
+}
+input[type="radio"]:hover {
+  background-color: pink;
+  box-shadow: 0 0 10px pink, 0 0 40px pink;
+}
+
+input[type="checkbox"]:checked {
+    background-color: pink;
+    box-shadow: 0 0 10px pink, 0 0 40px pink;
+}
+input[type="checkbox"]:hover {
+    background-color: pink;
+    box-shadow: 0 0 10px pink, 0 0 40px pink;
+}
+.survey textarea {
+  display: block;  
+  margin: auto; 
+  width: 80%; 
+}
+form {
+  width: 60vw;
+  max-width: 450px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  
+}
+.genderone {
+   width: 10vw;
+  max-width: 400px;
+  min-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  text-align: center;
+  display: flex;
+}
+label {
+  display: block;
+  margin: 0.5rem;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  min-width: 300px;
+  box-shadow: 5px 5px 20px rgba(255, 20, 147, 0.7);
+  border-color: pink;
+  border-width: 1px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  animation: neon-glow 3s infinite linear;
+}
+input[type="submit"]:hover {
+  background-color: pink; 
+  color: white; 
+  box-shadow: 8px 8px 25px rgba(255, 20, 147, 0.9); 
+  border-color: hotpink; 
+  cursor: pointer; 
+  transform: scale(1.05); 
+  transition: all 0.3s ease-in-out; 
+}
+input[type="submit"]:active {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 1);
+    border-color: blue;
+    color: white;
+}
+select {
+    appearance: none; 
+    background-color: black;
+    color: white;
+    border: 2px solid pink;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.7);
+    transition: 0.3s ease-in-out;
+}
+select:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 1);
+    border-color: hotpink;
+}
+option {
+    background: black;
+    color: white;
+    margin: 0 auto;
+}
+select:active {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 1);
+    border-color: hotpink;
+}
+select:hover {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 1);
+    border-color: pink;
+}

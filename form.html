@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body> 
+    <img src="banner.jpg" alt="image">
+ <section>
+    <h1 class ="h1" id="title"> Personal Survey Form </h1>
+    <div class="desc">
+      <hr>
+    <p id="description"> This was designed to help you reflect on your personal journey, values, and growth. </p>
+    </div>
+    </section>
+    <form id="survey-form">
+      <fieldset class="1detail">
+       <label id="name-label" for="first-name"> Enter Your Fullname: <input id="name" name="name" type="text" placeholder="Enter your full name" required /></label>
+        <label id="email-label" for="email"> Enter JMC Email: <input id="email" name="email" type="email" placeholder="Jmc email is required"required /></label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <p>Your privacy is our priority, click agree if you're ready to fill up your information<label for="agreement">Agree
+        <input class="inline" id="1agreement" type="checkbox" required name="2ndagreement" value="1agreement"/> Very Sure <input class="inline" id="2agreement" type="checkbox" required name="2ndagreement" value="2agreement"/>
+        </p>
+        </fieldset>
+                      
+                      <br>
+
+        <fieldset class="genderone">
+          <legend> Choose your gender </legend>
+
+      <label for="male">
+  <input id="male" type="radio" name="gender" value="male" checked /> Male
+</label>
+
+<label for="female">
+  <input id="female" type="radio" name="gender" value="female" /> Female
+</label>
+
+<label for="lgbt">
+  <input id="lgbt" type="radio" name="gender" value="lgbt" /> LGBT
+</label>
+
+<label for="other">
+  <input id="other" type="radio" name="gender" value="other" /> Other
+</label>
+       </fieldset>
+        <br>
+       <fieldset>
+         <legend> More Info </legend>
+        
+    <label id="number-label" for="age">Input your age: <input id="number" type="number" name="number" min="6" max="120" style="width: 140px;" placeholder="Enter your age"/></label>
+
+
+      <label for="dropdown">How are you feeling today?
+    <select id="dropdown" name="dropdown">
+ <option value="">[Choose]</option>
+            <option value="1">Happy 😊</option>
+            <option value="2">Excited 🎉</option>
+            <option value="3"> Relaxed 😌</option>
+            <option value="4">Stressed 😟</option>
+            <option value="5">Tired 😴</option>
+            <option value="6">Sad 😢</option>
+             <option value="7">Other ^^</option>
+      </select>
+      </label>
+      <div class="bioflu">
+        <label for="bio">
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="If you choose other, 3-2 Sentence of how are you today before answering the survey."></textarea>
+        </label>
+        </div>
+         </fieldset>
+
+         <section class="2ndpaty">
+           <div class="2nddesc">
+           <h1> Self-Reflection and Personal Growth </h1>
+           <hr>
+            <p> Fill out any necessary to fill out.</p>
+             </div>
+           </section>
+           <fieldset>
+              <label for="first-question"> What makes you feel most alive and connected to the world around you?
+          <textarea id="first-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+
+         <label for="second-question"> How do you handle challenges, and what do you learn from them?
+          <textarea id="second-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+
+         <label for="third-question"> What do you value most in your relationships with others?
+          <textarea id="third-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+
+         <label for="fourth-question"> What are the things that your most passionate about, and why do they matter to you?
+          <textarea id="fourth-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+
+ <label for="fifth-question"> How do you define success in my own life?
+          <textarea id="fifth-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+
+        <label for="sixth-question">What parts of myself do you struggle to accept, and how can you work toward self-compassion?
+          <textarea id="sixth-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+
+        <label for="sixth-question">How do you find meaning in the everyday moments of life?
+          <textarea id="sixth-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+
+        <label for="seventh-question">How do you want to grow as a person, and what steps taking to make that growth happen?
+          <textarea id="seventh-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+
+        <label for="eight-question">What do you want to be remembered for, and what legacy do you want to create?
+          <textarea id="eight-question" name="first-question" rows="4.5" cols="50"></textarea>
+        </label>
+        </fieldset>
+       <input id="submit" type="submit" value="Submit"/>
+
+      </form>
+ <body>
+    </html>
